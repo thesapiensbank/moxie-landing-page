@@ -10,7 +10,7 @@ const Why = () => {
   return (
     <div className="w-full h-max flex flex-col items-center space-y-32 pb-32">
       <Title title="Why Moxie" />
-      <div className="xl:w-5/6 lg:w-11/12 grid lg:grid-cols-4 grid-cols-2 justify-center xl:gap-6 lg:gap-7 md:gap-x-10 md:gap-y-24 place-items-center ">
+      <div className="xl:w-5/6 lg:w-11/12 grid lg:grid-cols-4 grid-cols-2 justify-center xl:gap-6 lg:gap-7 md:gap-x-10 md:gap-y-24 gap-y-20 gap-x-2 place-items-center ">
         <Card
           title="Easy Connect"
           description="Using Metamask or CoinBase Wallet. Just click Connect Wallet' on the top right to start."

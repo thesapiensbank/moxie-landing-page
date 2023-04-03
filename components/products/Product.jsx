@@ -18,17 +18,17 @@ const Product = () => {
   return (
     <div className="w-full h-max flex flex-col items-center space-y-10">
       <Title title="Products" />
-      <div className="w-5/6 h-max bg-secondary rounded-xl flex p-9 xl:space-x-5 md:space-x-4">
+      <div className="w-5/6 h-max bg-secondary rounded-xl flex md:flex-row flex-col-reverse md:p-9 p-5 xl:space-x-5 md:space-x-4">
         <Image
           src={imageMap[selected]}
           alt=""
-          className="2xl:h-[388px] xl:h-[358px] lg:h-[328px] md:h-[238px] w-auto"
+          className="2xl:h-[388px] xl:h-[358px] lg:h-[328px] md:h-[238px] w-auto mt-4 md:mt-0"
         />
-        <div className="w-1/2 2xl:h-[388px] xl:h-[358px] lg:h-[328px] flex flex-col justify-center lg:space-y-10 space-y-6">
+        <div className="md:w-1/2 w-full 2xl:h-[388px] xl:h-[358px] lg:h-[328px] flex md:flex-col flex-row justify-center lg:space-y-10 md:space-y-6 space-x-2 md:space-x-0">
           <h1
             className={` ${
               selected === 0 ? "text-primary" : "strokeme"
-            } xl:text-7xl lg:text-6xl md:text-4xl font-bold capitalize cursor-pointer`}
+            } xl:text-7xl lg:text-6xl md:text-4xl text-lg font-bold capitalize cursor-pointer`}
             onClick={() => {
               handleSelect(0);
             }}
@@ -38,7 +38,7 @@ const Product = () => {
           <h1
             className={` ${
               selected === 1 ? "text-primary" : "strokeme"
-            } xl:text-7xl lg:text-6xl md:text-4xl font-bold capitalize cursor-pointer`}
+            } xl:text-7xl lg:text-6xl md:text-4xl text-lg font-bold capitalize cursor-pointer`}
             onClick={() => {
               handleSelect(1);
             }}
@@ -48,7 +48,7 @@ const Product = () => {
           <h1
             className={` ${
               selected === 2 ? "text-primary" : "strokeme"
-            } xl:text-7xl lg:text-6xl md:text-4xl font-bold capitalize cursor-pointer`}
+            } xl:text-7xl lg:text-6xl md:text-4xl text-lg font-bold capitalize cursor-pointer`}
             onClick={() => {
               handleSelect(2);
             }}
