@@ -26,16 +26,16 @@ const Hero = () => {
   return (
     <>
       <div
-        className="w-full lg:h-screen md:h-[30rem] h-[20rem] flex lg:pt-28 md:pt-16 lg:px-20 md:px-10"
+        className="w-full lg:h-screen md:h-[30rem] h-screen flex lg:pt-28 md:pt-16 lg:px-20 md:px-10"
         ref={myRef}
       >
-        <div className="w-1/2 md:flex justify-center hidden">
+        <div className="flex justify-center text-white">
           <LeftSection />
         </div>
       </div>
-      <div className="w-full flex justify-center md:hidden">
+      {/* <div className="flex justify-center w-full md:hidden">
         <LeftSection />
-      </div>
+      </div> */}
     </>
   );
 };

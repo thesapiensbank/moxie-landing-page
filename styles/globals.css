@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.body{
+.body {
   overflow-x: hidden;
 }
 
-.strokeme{
-    color: #BCBCBC;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-    1px 1px 0 #fff;
+.strokeme {
+  color: #fff;
+}
+
+.btn-primary {
+  @apply bg-primary border-primary;
+  @apply hover:bg-white hover:text-primary hover:border-primary;
+}
+
+.btn-secondary {
+  @apply bg-transparent border-white;
+  @apply hover:bg-white hover:text-primary hover:border-primary;
 }
