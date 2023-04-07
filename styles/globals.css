@@ -19,3 +19,7 @@
   @apply bg-transparent border-white;
   @apply hover:bg-white hover:text-primary hover:border-primary;
 }
+
+.hero-card {
+  clip-path: polygon(15% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+}

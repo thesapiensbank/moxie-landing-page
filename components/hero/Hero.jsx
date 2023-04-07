@@ -12,8 +12,8 @@ const Hero = () => {
       setVantaEffect(
         GLOBE({
           el: myRef.current,
-          color: "#fff",
-          backgroundColor: "#FBCA1E",
+          color: "#ffce00",
+          backgroundColor: "#FFF", //#FBCA1E
           color2: "#000",
           THREE,
         })
@@ -29,7 +29,7 @@ const Hero = () => {
         className="w-full lg:h-screen md:h-[30rem] h-screen flex lg:pt-28 md:pt-16 lg:px-20 md:px-10 hero-overlay"
         ref={myRef}
       >
-        <div className="flex justify-center text-white">
+        <div className="flex justify-center text-black">
           <LeftSection />
         </div>
       </div>
