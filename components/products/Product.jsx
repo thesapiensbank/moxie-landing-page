@@ -20,9 +20,9 @@ const Product = () => {
   };
 
   const titleMap = {
-    0: "MoxieSwap",
+    0: "Moxie Swap",
     1: "Moxie Marketplace",
-    2: "MoxieWallet",
+    2: "Moxie Wallet",
   };
   const handleSelect = (value) => {
     setSelected(value);
@@ -52,36 +52,18 @@ const Product = () => {
 
         <div className="flex flex-col items-center w-5/6 p-2 pb-12 border lg:flex-row rounded-xl bg-primary/5 border-primary/80 ">
           <Image
-            src={imageMap[selected]}
+            src={imageMap[2]}
             alt=""
             className="items-center justify-center w-full max-w-lg pt-12 drop-shadow h-2/3"
           />
           <p className="z-20 px-4 text-justify md:px-12 text-black/60">
-            <span className="text-2xl font-bold text-primary ">
-              {titleMap[selected]}
+            <span className="text-4xl font-bold text-primary ">
+              {titleMap[2]}
             </span>
             <br></br>
-            {textMap[selected]}
+            {textMap[2]}
             <br></br> <br></br>
-            {selected === 0 && (
-              <a
-                target={"_blank"}
-                href="https://moxieswap.com/"
-                className="btn btn-primary"
-              >
-                Visit MoxieSwap
-              </a>
-            )}
-            {selected === 1 && (
-              <a
-                target={"_blank"}
-                href="https://moxieswapnftmarketplace.netlify.app/explore"
-                className="btn btn-primary"
-              >
-                Visit Marketplace
-              </a>
-            )}
-            {selected === 2 && (
+            {
               <a
                 href="https://moxieswap.com/"
                 target={"_blank"}
@@ -89,11 +71,57 @@ const Product = () => {
               >
                 Download Wallet
               </a>
-            )}
+            }
           </p>
         </div>
-        <div className="flex items-center gap-x-4">
-          <h1
+        <div className="flex flex-col items-center w-5/6 p-2 pb-12 border lg:flex-row rounded-xl bg-primary/5 border-primary/80 ">
+          <Image
+            src={imageMap[1]}
+            alt=""
+            className="items-center justify-center w-full max-w-lg pt-12 drop-shadow h-2/3"
+          />
+          <p className="z-20 px-4 text-justify md:px-12 text-black/60">
+            <span className="text-4xl font-bold text-primary ">
+              {titleMap[1]}
+            </span>
+            <br></br>
+            {textMap[1]}
+            <br></br> <br></br>
+            <a
+              target={"_blank"}
+              href="https://moxieswapnftmarketplace.netlify.app/explore"
+              className="btn btn-primary"
+            >
+              Visit Marketplace
+            </a>
+          </p>
+        </div>
+        <div className="flex flex-col items-center w-5/6 p-2 pb-12 border lg:flex-row rounded-xl bg-primary/5 border-primary/80 ">
+          <Image
+            src={imageMap[0]}
+            alt=""
+            className="items-center justify-center w-full max-w-lg pt-12 drop-shadow h-2/3"
+          />
+          <p className="z-20 px-4 text-justify md:px-12 text-black/60">
+            <span className="text-4xl font-bold text-primary ">
+              {titleMap[0]}
+            </span>
+            <br></br>
+            {textMap[0]}
+            <br></br> <br></br>
+            {
+              <a
+                target={"_blank"}
+                href="https://moxieswap.com/"
+                className="btn btn-primary"
+              >
+                Visit Moxie Swap
+              </a>
+            }
+          </p>
+        </div>
+        <div className="flex items-center hidden gap-x-4">
+          <div
             className={` ${
               selected === 0
                 ? "text-primary shadow-primary drop-shadow-md scale-105"
@@ -104,9 +132,9 @@ const Product = () => {
             }}
           >
             DEX
-          </h1>
+          </div>
           <div className="w-2 h-2 rounded-full bg-primary"></div>
-          <h1
+          <div
             className={` ${
               selected === 1
                 ? "text-primary shadow-primary drop-shadow-md scale-105"
@@ -117,9 +145,9 @@ const Product = () => {
             }}
           >
             Marketplace
-          </h1>{" "}
+          </div>{" "}
           <div className="w-2 h-2 rounded-full bg-primary"></div>
-          <h1
+          <div
             className={` ${
               selected === 2
                 ? "text-primary shadow-primary drop-shadow-md scale-105"
@@ -130,7 +158,7 @@ const Product = () => {
             }}
           >
             Wallet
-          </h1>
+          </div>
         </div>
       </div>
     </div>

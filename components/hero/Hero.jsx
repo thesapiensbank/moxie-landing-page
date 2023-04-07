@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="w-full lg:h-screen md:h-[30rem] h-screen flex lg:pt-28 md:pt-16 lg:px-20 md:px-10"
+        className="w-full lg:h-screen md:h-[30rem] h-screen flex lg:pt-28 md:pt-16 lg:px-20 md:px-10 hero-overlay"
         ref={myRef}
       >
         <div className="flex justify-center text-white">

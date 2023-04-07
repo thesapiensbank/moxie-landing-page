@@ -22,7 +22,6 @@ export default function App({ Component, pageProps }) {
     <>
       <Navbar />
       <Component {...pageProps} />
-      <Footer />
     </>
   );
 }

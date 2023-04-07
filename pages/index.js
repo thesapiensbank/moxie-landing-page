@@ -4,6 +4,7 @@ import Hero from "@/components/hero/Hero";
 import Product from "@/components/products/Product";
 import Why from "@/components/why/Why";
 import Intro from "@/components/intro/Intro";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
         <Product />
         <Why />
       </div>
+      <Footer />
     </>
   );
 }

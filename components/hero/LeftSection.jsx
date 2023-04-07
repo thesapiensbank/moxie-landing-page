@@ -18,7 +18,7 @@ const LeftSection = () => {
         DEX & Web3 Wallet
       </p>
       <div className="flex justify-center space-x-5 md:justify-start">
-        <a className="btn btn-secondary">Explore</a>
+        <div className="btn btn-secondary">Explore</div>
       </div>
     </div>
   );
