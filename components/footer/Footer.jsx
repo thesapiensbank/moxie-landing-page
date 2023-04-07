@@ -9,7 +9,7 @@ const Footer = () => {
       <Wave
         fill="#ffce00"
         paused={false}
-        className="-mb-2"
+        className="-mb-2 bg-white"
         options={{
           height: 50,
           amplitude: 15,
